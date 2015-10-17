@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A598" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ncO-CS-WZZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mwn-y8-gja"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="wp-rj.png" translatesAutoresizingMaskIntoConstraints="NO" id="eQr-nm-wRf">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFq-0V-p8a">
+                                <rect key="frame" x="20" y="227" width="280" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="E4R-SV-tbz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Iniciar Migração" image="botao_migrar.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveContact:" destination="2" eventType="touchDown" id="JDS-MR-t2x"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="   Manter números antigos:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NuQ-cm-JDz">
+                                <rect key="frame" x="20" y="80" width="280" height="34"/>
+                                <color key="backgroundColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="Pde-as-ZmS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1I5-fo-brb">
+                                <rect key="frame" x="235" y="83" width="51" height="31"/>
+                                <accessibility key="accessibilityConfiguration" label="Manter números antigos"/>
+                            </switch>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="   Sufixo para diferenciar contatos antigos:" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="z6K-5W-CmV">
+                                <rect key="frame" x="20" y="122" width="280" height="27"/>
+                                <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="N4D-cN-YNS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="                                  " lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="6HA-IW-L9h">
+                                <rect key="frame" x="20" y="146" width="280" height="42"/>
+                                <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="huF-vL-ZKe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B8U-Oy-RNx">
+                                <rect key="frame" x="37" y="151" width="247" height="30"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="247" id="IVd-if-ZER"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eQr-nm-wRf" firstAttribute="leading" secondItem="3" secondAttribute="leading" id="0U1-hJ-ZpV"/>
+                            <constraint firstItem="6HA-IW-L9h" firstAttribute="top" secondItem="3" secondAttribute="top" constant="146" id="0Vf-ZT-oPR"/>
+                            <constraint firstItem="EFq-0V-p8a" firstAttribute="top" secondItem="3" secondAttribute="top" constant="227" id="0wg-Wn-vzV"/>
+                            <constraint firstAttribute="trailing" secondItem="EFq-0V-p8a" secondAttribute="trailing" constant="20" symbolic="YES" id="16k-8c-Gh4"/>
+                            <constraint firstAttribute="trailing" secondItem="NuQ-cm-JDz" secondAttribute="trailing" constant="20" symbolic="YES" id="Bjh-be-YL5"/>
+                            <constraint firstItem="1I5-fo-brb" firstAttribute="top" secondItem="3" secondAttribute="top" constant="83" id="TNn-3j-4WI"/>
+                            <constraint firstItem="1I5-fo-brb" firstAttribute="trailing" secondItem="B8U-Oy-RNx" secondAttribute="trailing" id="Ugu-wu-CxF"/>
+                            <constraint firstItem="6HA-IW-L9h" firstAttribute="centerX" secondItem="B8U-Oy-RNx" secondAttribute="centerX" id="WFy-DQ-Wy4"/>
+                            <constraint firstItem="z6K-5W-CmV" firstAttribute="top" secondItem="NuQ-cm-JDz" secondAttribute="bottom" constant="8" symbolic="YES" id="Y8d-OO-KB0"/>
+                            <constraint firstItem="B8U-Oy-RNx" firstAttribute="top" secondItem="3" secondAttribute="top" constant="151" id="YEL-Rz-9LN"/>
+                            <constraint firstItem="z6K-5W-CmV" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" id="ccy-gL-O8N"/>
+                            <constraint firstItem="eQr-nm-wRf" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" id="cvv-6z-xXO"/>
+                            <constraint firstItem="NuQ-cm-JDz" firstAttribute="top" secondItem="3" secondAttribute="top" constant="80" id="dDm-Zt-CoB"/>
+                            <constraint firstItem="6HA-IW-L9h" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" id="dMJ-ab-Z4w"/>
+                            <constraint firstItem="EFq-0V-p8a" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" id="dy7-51-M0R"/>
+                            <constraint firstItem="eQr-nm-wRf" firstAttribute="top" secondItem="3" secondAttribute="top" id="dzc-8B-Ozo"/>
+                            <constraint firstItem="NuQ-cm-JDz" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" id="l0b-bn-xta"/>
+                            <constraint firstAttribute="trailing" secondItem="6HA-IW-L9h" secondAttribute="trailing" constant="20" symbolic="YES" id="pzg-VA-Xme"/>
+                            <constraint firstAttribute="trailing" secondItem="z6K-5W-CmV" secondAttribute="trailing" constant="20" symbolic="YES" id="ssW-q0-cSS"/>
+                            <constraint firstItem="eQr-nm-wRf" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" id="wZx-fB-cFS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bmigrar" destination="EFq-0V-p8a" id="UsT-pB-qoE"/>
+                        <outlet property="lsufixo" destination="B8U-Oy-RNx" id="wP1-j1-i9c"/>
+                        <outlet property="snewName" destination="1I5-fo-brb" id="Xmq-n4-cUN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+                <customObject id="qd9-ec-ZYm"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="botao_migrar.png" width="560" height="90"/>
+        <image name="wp-rj.png" width="890" height="1275"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
